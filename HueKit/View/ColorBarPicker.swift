@@ -254,7 +254,7 @@ open class ColorBarPicker: UIControl {
 		get {
 			var t = super.accessibilityTraits
 			
-			t |= UIAccessibilityTraits.adjustable
+			t.insert(UIAccessibilityTraits.adjustable)
 			
 			return t
 		}
